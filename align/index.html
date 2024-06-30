@@ -28,12 +28,17 @@
     <title>Align: Free Landing Page Template from Uisual</title>
   </head>
   <body>
-    <header role="banner" class="ui-section-header">
+    <!-- header is same as role=banner -->
+    <header class="ui-section-header">
+      <!-- the size of screen's root is inherrited and overtwritable, it edits the padding and auto left and right . I don't understand why setting up length, but respect -->
       <div class="ui-layout-container">
+        <!-- ui-section-header__layout contains spacebetween , it ignore the justify-content what we have in ui-layout-flex -->
         <div class="ui-section-header__layout ui-layout-flex">
           <!-- LOGO -->
           <a href="#" role="link" aria-label="#">
-            <svg viewBox="0 0 18 18" height="18" width="18" role="img" aria-label="#">
+            <!-- delete viewBox="0(x-axis at original position) 0(y-axis at original position) 18(width) 18(height)" -->
+            <svg height="18" width="18" role="img" aria-label="#">
+              <!-- how to draw shape out, which is unnessary to learn -->
               <path fill="#353535" d="M0 0h4.5v9a4.5 4.5 0 109 0V6H18v3A9 9 0 110 9V0zm18 4.5V0h-4.5v4.5H18z"/>
             </svg>
           </a>
